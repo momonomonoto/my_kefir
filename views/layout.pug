@@ -15,7 +15,7 @@ html
                 .mdl-layout__header-row.project_navbar
                 .mdl-layout-spacer
             a.mdl-navigation__link.mdl-layout-title.project_navbar__title(href='/').textHeader Translator
-            form(action='#')
+            form(method='POST')
                 .mdl-textfield.mdl-js-textfield
                     input#sample2.mdl-textfield__input(type='text',name='text', pattern="[А-яA-z]{0,15}")
                     label.mdl-textfield__label(for='sample2') Number...

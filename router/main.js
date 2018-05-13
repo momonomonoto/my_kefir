@@ -8,6 +8,7 @@ function setRouter() {
         res.render('layout.pug');
     });
     router.post('/', (req,res)=>{
+        console.log('hello post')
         translator.getWord('hello',req,res);
     });
 

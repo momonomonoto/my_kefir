@@ -14,6 +14,7 @@ const options = {
 const word = `win`;
 const lang = `en-ru`;
 const getWord = (word = `win`,req,res) => {
+    console.log('getWord');
     kefir
         .fromPromise(
             axios.get(`${config.url}&lang=${lang}&text=${word}`)
